@@ -1,4 +1,4 @@
-alice_in_wonderland = '"Would you tell me, please, which way I ought to go from here?"\n"That depends a good deal on where you want to get to," said the Cat.\n"I don't much care where ——" said Alice.\n"Then it doesn't matter which way you go," said the Cat.\n"—— so long as I get somewhere," Alice added as an explanation.\n"Oh, you're sure to do that," said the Cat, "if you only walk long enough."'
+#alice_in_wonderland = '"Would you tell me, please, which way I ought to go from here?"\n"That depends a good deal on where you want to get to," said the Cat.\n"I don't much care where ——" said Alice.\n"Then it doesn't matter which way you go," said the Cat.\n"—— so long as I get somewhere," Alice added as an explanation.\n"Oh, you're sure to do that," said the Cat, "if you only walk long enough."'
 # task 01 == Розділіть змінну alice_in_wonderland так, щоб вона займала декілька фізичних лінії
 # task 02 == Знайдіть та відобразіть всі символи одинарної лапки (') у тексті
 # task 03 == Виведіть змінну alice_in_wonderland на друк
@@ -16,7 +16,10 @@ alice_in_wonderland = '"Would you tell me, please, which way I ought to go from 
 моря становить 37 800 км2. Яку площу займають Чорне та Азов-
 ське моря разом?
 """
-
+black_sea = 436402 
+azov_sea = 37800 
+sum = black_sea + azov_sea
+print(f"{sum} км²")
 
 # task 05
 """
@@ -25,6 +28,17 @@ alice_in_wonderland = '"Would you tell me, please, which way I ought to go from 
 250 449 товарів. На другому та третьому – 222 950 товарів.
 Знайдіть кількість товарів, що розміщені на кожному складі.
 """
+total = 375291
+first_second = 250449
+second_third = 222950
+
+b = first_second + second_third - total
+a = first_second - b
+c = second_third - b
+
+print(f"1 склад: {a} товарів")
+print(f"2 склад: {b} товарів")
+print(f"3 склад: {c} товарів")
 
 
 # task 06
@@ -34,7 +48,10 @@ alice_in_wonderland = '"Would you tell me, please, which way I ought to go from 
 вати необхідно буде півтора року по 1179 грн/місяць. Обчисліть
 вартість комп’ютера.
 """
-
+month_1 = 1179
+total_month = 18
+cost_PC = month_1 * total_month
+print(cost_PC) 
 
 # task 07
 """
@@ -43,7 +60,13 @@ a) 8019 : 8     d) 7248 : 6
 b) 9907 : 9     e) 7128 : 5
 c) 2789 : 5     f) 19224 : 9
 """
-
+a = 8019 % 8
+b = 9907 % 9
+с = 2789 % 5
+d = 7248 % 6
+e = 7128 % 5 
+f = 19224 % 9
+print(a, b, c, d, e, f)
 
 # task 08
 """
@@ -57,6 +80,26 @@ c) 2789 : 5     f) 19224 : 9
 Торт            1           350 грн
 Вода            3           21 грн
 """
+cost_big_pizza = 274
+cost_medium_pizza = 218
+cost_juice = 35
+cost_cake = 350
+cost_water = 21
+
+quantity_big_pizza = 4
+quantity_medium_pizza = 2
+quantity_juice = 4
+quantity_cake = 1
+quantity_water = 3
+
+total_big_pizza = cost_big_pizza * quantity_big_pizza
+total_medium_pizza = cost_medium_pizza * quantity_medium_pizza
+total_juice = cost_juice * quantity_juice
+total_cake = cost_cake * quantity_cake
+total_water = cost_water * cost_water
+
+all_total = total_big_pizza + total_medium_pizza + total_juice + total_cake + total_water
+print(all_total)
 
 
 # task 09
@@ -66,7 +109,10 @@ c) 2789 : 5     f) 19224 : 9
 розміщено щонайбільше 8 фото. Скільки сторінок знадобиться
 Ігорю, щоб вклеїти всі фото?
 """
-
+all_photo = 232
+photo_per = 8
+total_per = all_photo / photo_per
+print(total_per)
 
 # task 10
 """
@@ -79,3 +125,15 @@ c) 2789 : 5     f) 19224 : 9
 равку під час цієї подорожі, кожного разу заправляючи пов-
 ний бак?
 """
+full_distance_km = 1600
+segment = 100
+distance_100_km = 9
+vat_l = 48
+
+number_of_segments = full_distance_km / segment
+gas_volume = number_of_segments * distance_100_km
+print(gas_volume)
+
+gas_station = gas_volume / vat_l
+print(gas_station)
+
