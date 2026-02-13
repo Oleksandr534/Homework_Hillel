@@ -1,0 +1,20 @@
+def sum_from_string_numbers(string_numbers: str) -> int:
+    try:
+        numbers = string_numbers.split(",")
+        total = 0
+        for num in numbers:
+            total += int(num)
+        return total
+    except ValueError:
+        raise ValueError("Не можу це зробити!")
+
+
+# Масив рядків
+data = ["1,2,3,4", "1,2,3,4,50", "qwerty1,2,3"]
+
+for item in data:
+    try:
+        result = sum_from_string_numbers(item)
+        print(result)
+    except ValueError:
+        print("Не можу це зробити!")
